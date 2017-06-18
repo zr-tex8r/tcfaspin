@@ -1,0 +1,626 @@
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2017/W32TeX) (preloaded format=platex 2017.6.9)  18 JUN 2017 17:36
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./sample3.tex
+(./sample3.tex
+pLaTeX2e <2017/05/05> (based on LaTeX2e <2017-04-15>)
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(c:/texlive/2017/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2017/03/05 okumura, texjporg
+\jsc@mpt=\dimen118
+\jsc@mmm=\dimen119
+\jsc@smallskipamount=\skip41
+LaTeX Info: Redefining \rmfamily on input line 468.
+LaTeX Info: Redefining \sffamily on input line 471.
+LaTeX Info: Redefining \ttfamily on input line 474.
+LaTeX Info: Redefining \textmc on input line 477.
+LaTeX Info: Redefining \textgt on input line 479.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 540.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 731.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 731.
+\fullwidth=\dimen120
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 883.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 883.
+\c@part=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\@abstractbox=\box42
+\c@figure=\count88
+\c@table=\count89
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\jsc@tocl@width=\dimen121
+\@lnumwidth=\dimen122
+\bibindent=\dimen123
+(c:/texlive/2017/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2017/02/24 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 94.
+LaTeX Info: Redefining \LaTeX on input line 147.
+LaTeX Info: Redefining \LaTeXe on input line 200.
+)
+\heisei=\count90
+)
+(c:/Users/yato/texmf/tex/latex/tcfaspin/tcfaspin.sty
+Package: tcfaspin 2017/06/18 v0.2a
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen124
+\pgfutil@tempdimb=\dimen125
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box43
+
+(c:/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks19
+))) (c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen126
+\pgf@xa=\dimen127
+\pgf@xb=\dimen128
+\pgf@xc=\dimen129
+\pgf@y=\dimen130
+\pgf@ya=\dimen131
+\pgf@yb=\dimen132
+\pgf@yc=\dimen133
+\c@pgf@counta=\count91
+\c@pgf@countb=\count92
+\c@pgf@countc=\count93
+\c@pgf@countd=\count94
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen134
+\pgfmath@count=\count95
+\pgfmath@box=\box44
+\pgfmath@toks=\toks20
+\pgfmath@stack@operand=\toks21
+\pgfmath@stack@operation=\toks22
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count96
+)))
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/13 v1.2b Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 99.
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/14 v5.0e Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(c:/texlive/2017/texmf-dist/tex/latex/animate/animate.sty
+Package: animate 2017/05/18 PDF animations from files and inline graphics
+
+(c:/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
+)
+\XKV@depth=\count97
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count98
+\calc@Bcount=\count99
+\calc@Adimen=\dimen137
+\calc@Bdimen=\dimen138
+\calc@Askip=\skip44
+\calc@Bskip=\skip45
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count100
+\calc@Cskip=\skip46
+)
+(c:/texlive/2017/texmf-dist/tex/latex/media9/pdfbase.sty
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2017/05/29 L3 programming layer (loader) 
+
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2017/05/29 L3 programming layer (code)
+\c_max_int=\count101
+\l_tmpa_int=\count102
+\l_tmpb_int=\count103
+\g_tmpa_int=\count104
+\g_tmpb_int=\count105
+\g__intarray_font_int=\count106
+\g__prg_map_int=\count107
+\c_log_iow=\count108
+\l_iow_line_count_int=\count109
+\l__iow_line_target_int=\count110
+\l__iow_one_indent_int=\count111
+\l__iow_indent_int=\count112
+\c_zero_dim=\dimen139
+\c_max_dim=\dimen140
+\l_tmpa_dim=\dimen141
+\l_tmpb_dim=\dimen142
+\g_tmpa_dim=\dimen143
+\g_tmpb_dim=\dimen144
+\c_zero_skip=\skip47
+\c_max_skip=\skip48
+\l_tmpa_skip=\skip49
+\l_tmpb_skip=\skip50
+\g_tmpa_skip=\skip51
+\g_tmpb_skip=\skip52
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count113
+\c__fp_leading_shift_int=\count114
+\c__fp_middle_shift_int=\count115
+\c__fp_trailing_shift_int=\count116
+\c__fp_big_leading_shift_int=\count117
+\c__fp_big_middle_shift_int=\count118
+\c__fp_big_trailing_shift_int=\count119
+\c__fp_Bigg_leading_shift_int=\count120
+\c__fp_Bigg_middle_shift_int=\count121
+\c__fp_Bigg_trailing_shift_int=\count122
+\c__fp_rand_size_int=\count123
+\c__fp_rand_four_int=\count124
+\c__fp_rand_eight_int=\count125
+\l__sort_length_int=\count126
+\l__sort_min_int=\count127
+\l__sort_top_int=\count128
+\l__sort_max_int=\count129
+\l__sort_true_max_int=\count130
+\l__sort_block_int=\count131
+\l__sort_begin_int=\count132
+\l__sort_end_int=\count133
+\l__sort_A_int=\count134
+\l__sort_B_int=\count135
+\l__sort_C_int=\count136
+\l__tl_build_start_index_int=\count137
+\l__tl_build_index_int=\count138
+\l__tl_analysis_normal_int=\count139
+\l__tl_analysis_index_int=\count140
+\l__tl_analysis_nesting_int=\count141
+\l__tl_analysis_type_int=\count142
+\l__regex_internal_a_int=\count143
+\l__regex_internal_b_int=\count144
+\l__regex_internal_c_int=\count145
+\l__regex_balance_int=\count146
+\l__regex_group_level_int=\count147
+\l__regex_mode_int=\count148
+\c__regex_cs_in_class_mode_int=\count149
+\c__regex_cs_mode_int=\count150
+\l__regex_catcodes_int=\count151
+\l__regex_default_catcodes_int=\count152
+\c__regex_catcode_D_int=\count153
+\c__regex_catcode_S_int=\count154
+\c__regex_catcode_L_int=\count155
+\c__regex_catcode_O_int=\count156
+\c__regex_catcode_A_int=\count157
+\c__regex_all_catcodes_int=\count158
+\l__regex_show_lines_int=\count159
+\l__regex_min_state_int=\count160
+\l__regex_max_state_int=\count161
+\l__regex_left_state_int=\count162
+\l__regex_right_state_int=\count163
+\l__regex_capturing_group_int=\count164
+\l__regex_min_pos_int=\count165
+\l__regex_max_pos_int=\count166
+\l__regex_current_pos_int=\count167
+\l__regex_start_pos_int=\count168
+\l__regex_success_pos_int=\count169
+\l__regex_current_char_int=\count170
+\l__regex_current_catcode_int=\count171
+\l__regex_last_char_int=\count172
+\l__regex_case_changed_char_int=\count173
+\l__regex_current_state_int=\count174
+\l__regex_step_int=\count175
+\l__regex_min_active_int=\count176
+\l__regex_max_active_int=\count177
+\l__regex_replacement_csnames_int=\count178
+\l__regex_match_count_int=\count179
+\l__regex_min_submatch_int=\count180
+\l__regex_submatch_int=\count181
+\l__regex_zeroth_submatch_int=\count182
+\c_empty_box=\box45
+\l_tmpa_box=\box46
+\l_tmpb_box=\box47
+\g_tmpa_box=\box48
+\g_tmpb_box=\box49
+\l__box_top_dim=\dimen145
+\l__box_bottom_dim=\dimen146
+\l__box_left_dim=\dimen147
+\l__box_right_dim=\dimen148
+\l__box_top_new_dim=\dimen149
+\l__box_bottom_new_dim=\dimen150
+\l__box_left_new_dim=\dimen151
+\l__box_right_new_dim=\dimen152
+\l__box_internal_box=\box50
+\l__coffin_internal_box=\box51
+\l__coffin_internal_dim=\dimen153
+\l__coffin_offset_x_dim=\dimen154
+\l__coffin_offset_y_dim=\dimen155
+\l__coffin_x_dim=\dimen156
+\l__coffin_y_dim=\dimen157
+\l__coffin_x_prime_dim=\dimen158
+\l__coffin_y_prime_dim=\dimen159
+\c_empty_coffin=\box52
+\l__coffin_aligned_coffin=\box53
+\l__coffin_aligned_internal_coffin=\box54
+\l_tmpa_coffin=\box55
+\l_tmpb_coffin=\box56
+\l__coffin_display_coffin=\box57
+\l__coffin_display_coord_coffin=\box58
+\l__coffin_display_pole_coffin=\box59
+\l__coffin_display_offset_dim=\dimen160
+\l__coffin_display_x_dim=\dimen161
+\l__coffin_display_y_dim=\dimen162
+\l__coffin_bounding_shift_dim=\dimen163
+\l__coffin_left_corner_dim=\dimen164
+\l__coffin_right_corner_dim=\dimen165
+\l__coffin_bottom_corner_dim=\dimen166
+\l__coffin_top_corner_dim=\dimen167
+\l__coffin_scaled_total_height_dim=\dimen168
+\l__coffin_scaled_width_dim=\dimen169
+)
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/l3dvipdfmx.def
+File: l3dvidpfmx.def 2017/03/18 v L3 Experimental driver: dvipdfmx
+\g__driver_image_int=\count183
+\l__driver_tmp_box=\box60
+))
+(c:/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2017/05/29 LaTeX2e option processing using LaTeX3 keys
+)
+Package: pdfbase 2017/03/23 v0.14 driver independent access to low-level PDF fe
+atures
+\g_pbs_page_int=\count184
+\g_pbs_obj_int=\count185
+\g_pbs_oc_int=\count186
+)
+(c:/texlive/2017/texmf-dist/tex/latex/ocgx2/ocgbase.sty
+Package: ocgbase 2017/03/30 v0.10 support package for ocgx2.sty
+)
+\@anim@box=\box61
+\@anim@measbox=\box62
+\@anim@tmpdima=\dimen170
+\@anim@tmpdimb=\dimen171
+\@anim@num=\count187
+\@anim@curframe=\count188
+\@anim@curframe@zb=\count189
+\@anim@resizeflags=\count190
+\@anim@skipfram=\count191
+\@anim@mulframecnt=\count192
+\@anim@@tmlnfile=\read1
+\@anim@tmpcnt=\count193
+\c@@anim@ltxcnt=\count194
+\@anim@curlayer=\count195
+\@anim@lineno=\count196
+\@anim@curfield=\count197
+\@anim@@resizeflags=\count198
+)
+\tcfs@boxa=\box63
+\tcfs@boxb=\box64
+
+g@rate=32,g@ticks=64
+) (c:/Users/yato/texmf/tex/latex/bxcoloremoji/bxcoloremoji.sty
+Package: bxcoloremoji 2017/05/08 v0.4-pre
+
+(c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count199
+)
+(c:/texlive/2017/texmf-dist/tex/generic/kastrup/binhex.tex)
+\bxce@cnta=\count266
+\bxce@cwd=\dimen172
+\bxce@disp@dim=\dimen173
+\bxce@inter@skip=\skip53
+\bxce@cnto=\count267
+) (./sample3.aux)
+\openout1 = `sample3.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+ABD: EveryShipout initializing macros
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr0>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr1>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr2>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr3>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+
+<a0,fr4>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr5>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr6>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr7>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr8>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr9>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr10>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr11>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+
+<a0,fr12>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr13>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr14>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr15>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr16>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr17>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr18>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+
+<a0,fr19>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr20>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr21>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr22>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr23>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr24>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr25>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+
+<a0,fr26>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr27>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr28>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr29>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr30>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr31>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr32>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+
+<a0,fr33>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr34>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr35>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr36>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr37>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr38>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr39>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+
+<a0,fr40>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr41>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr42>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr43>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr44>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr45>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr46>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+
+<a0,fr47>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr48>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr49>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr50>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr51>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr52>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr53>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+
+<a0,fr54>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr55>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr56>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr57>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr58>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr59>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr60>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+
+<a0,fr61>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr62>
+File: emoji_images/twemoji-pdf/1F363.pdf Graphic file (type pdf)
+<emoji_images/twemoji-pdf/1F363.pdf>
+ <a0,fr63> [1
+
+] (./sample3.aux) ) 
+Here is how much of TeX's memory you used:
+ 16344 strings out of 493653
+ 310316 string characters out of 6151896
+ 361134 words of memory out of 5000000
+ 19836 multiletter control sequences out of 15000+600000
+ 535004 words of font info for 44 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 47i,6n,65p,10421b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on sample3.dvi (1 page, 41244 bytes).

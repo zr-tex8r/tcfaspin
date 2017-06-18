@@ -1,0 +1,11 @@
+\documentclass[dvipdfmx,a4paper]{jsarticle}
+\usepackage[ticks=64]{tcfaspin}
+\usepackage{amsmath}
+\newcommand*\SpinDisplay[1]{\faSpin{$\displaystyle #1$}}
+\begin{document}
+\[
+  \SpinDisplay{\left( \int_0^\infty \frac{\sin x}{\sqrt x}\,\mathrm{d}x \right)^2 =
+  \SpinDisplay{\prod_{k=1}^\infty \frac{4k^2}{4k^2-1} \neq
+  \SpinDisplay{\frac{\pi}{2017}}}}
+\]
+\end{document}

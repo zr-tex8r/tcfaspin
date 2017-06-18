@@ -1,7 +1,7 @@
-tcsushihead パッケージ
-======================
+tcfaspin パッケージ
+===================
 
-LaTeX： FontAwssome の“fa-spin”のようにテキストを回転させる
+LaTeX： FontAwesome の“fa-spin”のようにテキストを回転させる
 
 ネストを実現するところに力入れた。
 

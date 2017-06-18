@@ -23,8 +23,12 @@
 
 %% options
 \DeclareOption{dvipdfmx}{%
+  \PassOptionsToPackage{dvipdfmx}{graphics}%
+  \PassOptionsToPackage{dvipdfmx}{graphicx}%
   \PassOptionsToPackage{dvipdfmx}{animate}}
 \DeclareOption{dvips}{%
+  \PassOptionsToPackage{dvips}{graphics}%
+  \PassOptionsToPackage{dvips}{graphicx}%
   \PassOptionsToPackage{dvips}{animate}}
 \DeclareOption{xetex}{}
 \DeclareOption{luatex}{}
@@ -44,7 +48,9 @@
 %% packages
 \RequirePackage{pgfmath}
 \RequirePackage{graphicx}
+\ifx\faStopTicks\@undefined
 \RequirePackage{animate}
+\fi
 
 %% unique tokens
 \def\tcfs@end{\tcfs@end@}
@@ -92,7 +98,6 @@
   \ifnum\@tempcnta>\@tempcntb \@tempcnta\@tempcntb \fi
   \xdef\tcfs@g@rate{\the\@tempcnta}%
   \multiply\@tempcnta2 \xdef\tcfs@g@ticks{\the\@tempcnta}}
-\typeout{g@rate=\tcfs@g@rate,g@ticks=\tcfs@g@ticks}%
 
 %%<*> \faSpin{<text>}
 \@ifdefinable\faSpin{%
@@ -101,9 +106,14 @@
     \begingroup
       \def\tcfs@content{#1}%
       \tcfs@calc@metrics
-      \ifcase\tcfs@mode % extrenal
-       \let\tcfs@mode\tcfs@mode@internal
-        \tcfs@adjust@box{\tcfs@put@animated@box}%
+      \ifcase\tcfs@mode % external
+        \let\tcfs@mode\tcfs@mode@internal
+        \ifx\faStopTicks\@undefined
+          \tcfs@adjust@box{\tcfs@put@animated@box}%
+        \else
+          \edef\itcfsT{\number\faStopTicks}%
+          \tcfs@adjust@box{\tcfs@put@box@at@tick{\itcfsT}}%
+        \fi
       \or % internal
         \tcfs@adjust@box{\tcfs@put@box@at@tick{\itcfsT}}%
       \or % measure
