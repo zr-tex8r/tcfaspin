@@ -1,0 +1,179 @@
+%%
+%% This is file 'tcfaspin.sty'.
+%% 
+%% Copyright (c) 2016 Takayuki YATO (aka. "ZR")
+%%   GitHub:   https://github.com/zr-tex8r
+%%   Twitter:  @zr_tex8r
+%%
+%% This package is distributed under the MIT License.
+%%
+
+%% package declarations
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{tcfaspin}[2017/12/04 v0.2]
+\def\tcfs@pkgname{tcfaspin}
+
+%--------------------------------------- package options
+
+%% user parameters
+\def\tcfs@ticks{32}
+
+%% package
+\RequirePackage{keyval}
+
+%% options
+\DeclareOption{dvipdfmx}{%
+  \PassOptionsToPackage{dvipdfmx}{animate}}
+\DeclareOption{dvips}{%
+  \PassOptionsToPackage{dvips}{animate}}
+\DeclareOption{xetex}{}
+\DeclareOption{luatex}{}
+\DeclareOption{pdftex}{}
+% (keyval)
+\DeclareOption*{%
+  \edef\tcfs@tmpa{\noexpand\setkeys{tcsh}{\CurrentOption}%
+  }\tcfs@tmpa}
+% 'ticks=<number>'
+\define@key{tcsh}{ticks}{%
+  \def\tcfs@ticks{#1}}
+% dispatch
+\ProcessOptions*
+
+%--------------------------------------- general
+
+%% packages
+\RequirePackage{pgfmath}
+\RequirePackage{graphicx}
+\RequirePackage{animate}
+
+%% unique tokens
+\def\tcfs@end{\tcfs@end@}
+
+%% constants
+\chardef\tcfs@mode@external=0
+\chardef\tcfs@mode@internal=1
+\chardef\tcfs@mode@measure=2
+\chardef\tcfs@mode@exmeasure=3
+
+%% variables
+\newif\iftcfs@overflow
+\newbox\tcfs@boxa
+\newbox\tcfs@boxb
+\let\tcfs@mode\tcfs@mode@external
+\let\tcfs@content\relax
+\let\tcfs@cwd\relax
+\let\tcfs@cht\relax
+\let\tcfs@cdp\relax
+\let\tcfs@diam\relax
+\let\tcfs@slk\relax
+\let\tcfs@ht\relax
+\let\tcfs@dp\relax
+\let\tcfs@g@rate\relax
+\let\tcfs@g@ticks\relax
+
+%% aliases
+\let\tcfs@calc\pgfmathsetmacro
+
+%---------------------------------------  fa-like spinner
+
+%% global settings
+% cycle = 2s
+\def\tcfs@max@rate{80}
+\def\tcfs@anim@param{%
+  autopause,autoplay,loop,autoresume=false,controls=false}
+
+%% set \tcfs@g@rate
+\setbox\tcfs@boxa\hbox{%sandbox
+  \@tempcnta=\tcfs@ticks\relax
+  \ifnum\@tempcnta<\z@ \@tempcnta\z@ \fi
+  \advance\@tempcnta15
+  \divide\@tempcnta16 \multiply\@tempcnta16
+  \divide\@tempcnta2 \@tempcntb=\tcfs@max@rate\relax
+  \ifnum\@tempcnta>\@tempcntb \@tempcnta\@tempcntb \fi
+  \xdef\tcfs@g@rate{\the\@tempcnta}%
+  \multiply\@tempcnta2 \xdef\tcfs@g@ticks{\the\@tempcnta}}
+\typeout{g@rate=\tcfs@g@rate,g@ticks=\tcfs@g@ticks}%
+
+%%<*> \faSpin{<text>}
+\@ifdefinable\faSpin{%
+  \DeclareRobustCommand*{\faSpin}[1]{%
+    \leavevmode
+    \begingroup
+      \def\tcfs@content{#1}%
+      \tcfs@calc@metrics
+      \ifcase\tcfs@mode % extrenal
+       \let\tcfs@mode\tcfs@mode@internal
+        \tcfs@adjust@box{\tcfs@put@animated@box}%
+      \or % internal
+        \tcfs@adjust@box{\tcfs@put@box@at@tick{\itcfsT}}%
+      \or % measure
+        \tcfs@dummy{\tcfs@cwd}{\tcfs@cht}{\tcfs@cdp}%
+      \else % exmeasure
+        \tcfs@dummy{\tcfs@diam\p@}{\tcfs@ht\p@}{\tcfs@dp\p@}%
+      \fi
+    \endgroup}}
+
+%% \tcfs@dummy{<width>}{<height>}{<depth>}
+\def\tcfs@dummy#1#2#3{%
+  \vrule\@width#1\@height#2\@depth#3\relax}
+
+%% \tcfs@calc@metrics
+\def\tcfs@calc@metrics{%
+  \let\tcfs@prev@mode\tcfs@mode
+  \let\tcfs@mode\tcfs@mode@exmeasure
+  \setbox\tcfs@boxa\hbox{{\tcfs@content}}%
+  \tcfs@calc\tcfs@ra{\ht\tcfs@boxa+\dp\tcfs@boxa}%
+  \tcfs@calc\tcfs@rb{max(\p@,min(\tcfs@ra,\wd\tcfs@boxa))}%
+  \tcfs@calc\tcfs@ra{max(\p@,max(\tcfs@ra,\wd\tcfs@boxa))/\tcfs@rb}%
+  \tcfs@calc\tcfs@ra{sqrt(\tcfs@ra*\tcfs@ra+1)}%
+  \tcfs@calc\tcfs@diam{floor(\tcfs@ra*\tcfs@rb+1.5)}%
+  \let\tcfs@mode\tcfs@mode@measure
+  \setbox\tcfs@boxa\hbox{{\tcfs@content}}%
+  \edef\tcfs@cwd{\the\wd\tcfs@boxa}%
+  \edef\tcfs@cht{\the\ht\tcfs@boxa}%
+  \edef\tcfs@cdp{\the\dp\tcfs@boxa}%
+  \tcfs@calc\tcfs@ra{(\tcfs@cht-\tcfs@cdp)/2}%
+  \tcfs@calc\tcfs@ht{\tcfs@diam/2+\tcfs@ra}%
+  \tcfs@calc\tcfs@dp{\tcfs@diam/2-\tcfs@ra}%
+  \tcfs@calc\tcfs@slk{(\tcfs@diam-\tcfs@cwd)/2}%
+  %\tcfs@show@metrics
+  \let\tcfs@mode\tcfs@prev@mode}
+\def\tcfs@show@metrics{%
+  \typeout{%
+    width=\tcfs@diam pt|\tcfs@cwd^^J%
+    height=\tcfs@ht pt|\tcfs@cht^^J%
+    depth=\tcfs@dp pt|\tcfs@cdp^^J%
+    slack=\tcfs@slk pt}}
+
+%% \tcfs@put@box@at@tick{<tick>}
+\def\tcfs@put@box@at@tick#1{%
+  \@tempdima#1\p@ \divide\@tempdima\tcfs@g@ticks\relax
+  \@tempdima=-360\@tempdima
+  \edef\tcfs@ra{\strip@pt\@tempdima}%
+  \setbox\tcfs@boxb\hb@xt@\tcfs@diam\p@{%
+    \hss
+    \rotatebox[origin=c]{\tcfs@ra}{\tcfs@content}%
+    \hss}%
+  \ht\tcfs@boxb\tcfs@ht\p@ \dp\tcfs@boxb\tcfs@dp\p@
+  \copy\tcfs@boxb}
+
+%% \tcfs@put@animated@box
+\def\tcfs@put@animated@box{%
+  \edef\tcfs@next{%
+    \noexpand\begin{animateinline}%
+      [\tcfs@anim@param]{\tcfs@g@rate}%
+      \noexpand\multiframe{\tcfs@g@ticks}{itcfsT=0+1}{%
+      \let\noexpand\tcfs@tick\noexpand\itcfsT
+      \noexpand\tcfs@put@box@at@tick{\noexpand\itcfsT}%
+    }\noexpand\end{animateinline}%
+  }\tcfs@next}
+
+%% \tcfs@adjust@box
+\def\tcfs@adjust@box#1{%
+  \kern-\tcfs@slk\p@
+  \raisebox{\z@}[\tcfs@cht][\tcfs@cdp]{#1}%
+  \kern-\tcfs@slk\p@}
+
+%--------------------------------------- all done
+\endinput
+%% EOF
